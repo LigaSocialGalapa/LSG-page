@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 2rem;
+  margin: 2rem auto;
   width: 750px;
 }
 .container-input {
@@ -37,7 +37,6 @@
 @media (width <= 650px) {
   .container-inputs {
     width: 100%;
-    margin: 0;
   }
   .input {
     width: 300px;

@@ -89,3 +89,16 @@
     margin: 0 auto;
   }
 }
+
+@media (width <= 429px) {
+  #Quienes-Somos {
+    width: 100%;
+  }
+  .div-qs {
+    width: 70%;
+  }
+
+  .div-mv {
+    width: 85%;
+  }
+}

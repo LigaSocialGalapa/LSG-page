@@ -3,11 +3,16 @@ import React, { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaTimes } from 'react-icons/fa';
 
-export function Header() {
+export function Header({ showAll, setShowAll }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleComunicacionesClick = () => {
+    setIsOpen(false);
+    setShowAll(false);
   };
   return (
     <header>
@@ -39,7 +44,7 @@ export function Header() {
             <li>
               <a
                 className="link"
-                href="#"
+                onClick={handleComunicacionesClick}
               >
                 Comunicaciones
               </a>
@@ -68,7 +73,7 @@ export function Header() {
                   <a
                     className="link-phone"
                     onClick={handleToggle}
-                    href="#Quienes-Somos"
+                    href="/"
                   >
                     ¿Quienes Somos?
                   </a>
@@ -85,8 +90,7 @@ export function Header() {
                 <li>
                   <a
                     className="link-phone"
-                    onClick={handleToggle}
-                    href="#"
+                    onClick={handleComunicacionesClick}
                   >
                     Comunicaciones
                   </a>
