@@ -1,0 +1,17 @@
+.button {
+    background-color: var(--color-secundario);
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 50px;
+    margin-top: 1rem;
+    width: 166px;
+    color: var(--color-text);
+    transition: background-color 0.3s, transform 0.3s, filter 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--color-secundario-oscuro);
+    transform: scale(1.05);
+    filter: brightness(80%);
+}

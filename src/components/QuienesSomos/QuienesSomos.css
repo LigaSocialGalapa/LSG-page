@@ -1,0 +1,91 @@
+#Quienes-Somos {
+  width: 100%;
+  height: auto;
+  padding: 4rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.div-qs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  background-color: var(--color-terceario);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.div-mv {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 1rem;
+}
+.div-mv div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 37.5%;
+  background-color: var(--color-terceario);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.div-mv .div-m {
+  margin-right: 1rem;
+}
+.div-mv .div-v {
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 1500px) {
+  #Quienes-Somos {
+    height: auto;
+    padding: 5rem 0;
+  }
+  .div-qs {
+    scale: 1.1;
+    margin-bottom: 4rem;
+  }
+
+  .div-mv {
+    scale: 1.1;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #Quienes-Somos {
+    height: auto;
+    padding: 2rem 0;
+  }
+  .div-qs {
+    margin-top: 2rem;
+  }
+  .div-mv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+  .div-mv div {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .div-mv .div-m {
+    margin: 0 auto;
+  }
+  .div-mv .div-v {
+    margin: 0 auto;
+  }
+}

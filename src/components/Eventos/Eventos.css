@@ -1,0 +1,19 @@
+#Eventos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Eventos div {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 2rem;
+  padding: auto;
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 500px) {
+  #Eventos div {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
