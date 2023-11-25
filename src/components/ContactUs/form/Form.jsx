@@ -37,10 +37,10 @@ export function Form({ onCloseForm }) {
 
     emailjs
       .sendForm(
-        'service_9yet5il',
-        'template_6c3mnhz',
+        'service_qfd07k7',
+        'template_dt0f5id',
         form.current,
-        'yQCvn5c0y6soKRRO-'
+        'ohwstctucOvVQyBqX'
       )
       .then(
         (result) => {

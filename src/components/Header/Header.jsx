@@ -14,6 +14,9 @@ export function Header({ showAll, setShowAll }) {
     setIsOpen(false);
     setShowAll(false);
   };
+  const handleVolverClick = () => {
+    setShowAll(true);
+  };
   return (
     <header>
       <div className="div-img">
@@ -28,6 +31,7 @@ export function Header({ showAll, setShowAll }) {
             <li>
               <a
                 className="link"
+                onClick={handleVolverClick}
                 href="#Quienes-Somos"
               >
                 ¿Quienes Somos?
@@ -36,6 +40,7 @@ export function Header({ showAll, setShowAll }) {
             <li>
               <a
                 className="link"
+                onClick={handleVolverClick}
                 href="#Eventos"
               >
                 Eventos
@@ -52,6 +57,7 @@ export function Header({ showAll, setShowAll }) {
             <li>
               <a
                 className="link"
+                onClick={handleVolverClick}
                 href="#Contact-me"
               >
                 Contactanos

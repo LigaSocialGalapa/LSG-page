@@ -35,10 +35,13 @@ export function ContactMe() {
               ligasocialgalapa
             </a>
           </p>
+          <p>
+            Envia un Mensaje: <a href="https://walink.co/42a1dd">WhatsApp</a>
+          </p>
         </div>
         {formActive ? (
           <Button
-            text="Envianos un mensaje"
+            text="Envianos un correo"
             onclick={handleToggle}
             type="button"
           />

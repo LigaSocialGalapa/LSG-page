@@ -1,9 +1,13 @@
-import './Button.css'
+import './Button.css';
 
-export function Button ({ text, onclick, type }) {
+export function Button({ text, onclick, type }) {
   return (
-
-    <button typeof={type} className='button' onClick={onclick}>{text}</button>
-
-  )
+    <button
+      typeof={type}
+      className="button"
+      onClick={onclick}
+    >
+      {text}
+    </button>
+  );
 }
